@@ -1,0 +1,13 @@
+{
+  "name": "prettier-asm-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup-corpus": "node tests/setup-corpus.mjs",
+    "expected": "node tests/build-expected.mjs",
+    "test": "node tests/harness.mjs build/prettier-asm corpus/cases/real.jsonl"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}

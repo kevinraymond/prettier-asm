@@ -1,0 +1,51 @@
+// Snippets for run.mjs: a string, or [code, flags]. Each runs at the default width, at
+// --print-width 40 and with --no-semi.
+export default [
+  // estree.js statements
+  "x++; --y; !a; typeof b; void 0; delete c; -(-x); +(+y); - -z; !(!a)",
+  "a, b, c",
+  "for (;;) {}",
+  "for (a; b; c) d",
+  "for (a in b) c",
+  "with (a) b",
+  "lbl: ;",
+  "label: { break label; }\nouter: for (;;) { continue outer }",
+  "if (a) {} else {}",
+  "if (a) b; else if (c) d; else e",
+  "if (a) b; // c\nelse d",
+  "do {} while (x)\ndo ; while (y)\ndo x; while (y)",
+  "switch (a) { case 1: { b } case 2: c; d; default: }",
+  "switch (a) {}\nswitch (veryLongDiscriminantExpressionName + anotherVeryLongName + more) { default: }",
+  "switch (a) { // x\ncase 1: // y\n  b\n\n\ncase 2:\n}",
+  "try { a } catch (e) { b } finally { c }",
+  "try {} catch {}",
+  "try {} catch (/* c */ e) {}",
+  "debugger",
+  "(a, b)",
+  "yield",
+  "x; ;; y",
+  "{ ; }\n{ /* empty */ }",
+  "\"use strict\"; 'use\\x27s'; \"it's\"\n\nfoo",
+  "function f() { 'use strict'; }",
+  // literals
+  "this; null; true; false; 1.50; 0xAB; 1e10; 10n; 0XFFn; /a/gi; /x/ymsgdiu; .5; 5.; 0.0e+10",
+  "'a'; \"b\"; 'it\\'s'; \"say \\\"hi\\\"\"; 'a\\\nb'",
+  ["'a'; \"b\"; \"it's\"", ["--single-quote"]],
+  // comments around statements
+  "// a\nx; // b\n/* c */ y;\nif (a) {\n  // d\n} else {\n  // e\n}\n",
+  "for (;;) {} // z",
+  "#!/usr/bin/env node\nx",
+  // needs-parens and leading semicolons
+  "(a, b);\n[a];\n`x`;\n+a;\n-b;\n/r/;\n(function () {});\n({}).x;\n(class {});",
+  "for (x of async) ;\nfor ((async) of x) ;\nfor ((let) of x) ;",
+  "(let)[0];\n(let[0]);",
+  "!(a in b); (!a) in b; (+a) ** 2; (a++)``; new (a.b()); new (a().b); new (a()); (a?.b).c; (a?.b)(); new (a?.b)()",
+  "typeof (() => {}); (() => {})(); (function(){})``; (a ? b : c).d; (a ? b : c)(); (yield a)",
+  // decorators
+  "@dec export class A {}\nexport @dec class B {}\nexport default @dec class {}",
+  "@a.b() @c class B extends (@d class {}) {}\nconst x = @dec class {};\n(@dec class {}).name",
+  "class A {\n  @x m() {}\n  @y @z prop = 1;\n  @w\n  static accessor q;\n  accessor #p = 2;\n  @dec() static m() {}\n}",
+  "@(foo.bar[0]) class X {}\n@a(b) @(c?.d) class Y {}\n@a.b.c(d, e) class Z {}",
+  "@dec // c\nclass A {}\nclass B {\n  @dec // c\n  m() {}\n  @dec /* d */ p;\n}",
+  "@decorator({ veryLongPropertyName: true, anotherLongPropertyName: false, x: 1 }) class A {}",
+];

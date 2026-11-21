@@ -1,0 +1,526 @@
+{
+ "schema": 1,
+ "run_id": "2026-11-21T02:58:42.645Z",
+ "asm": {
+  "source": "build/prettier-asm",
+  "recorded_copy": "build/record-tmp/prettier-asm",
+  "sha256": "3ef36d3467af6c68d5dbdb45811e01481c42a0a8bef4ee4fa6ca7b33615e04d9",
+  "size_bytes": 1893360,
+  "linkage": "static",
+  "interpreter": null,
+  "has_symbols": true
+ },
+ "rust": {
+  "path": "ref/prettier/rust/app/target/release/prettier",
+  "sha256": "68a3375cfadac923b4ef590be81d92ea5d31d73d80279b76ca610e0aa0c3772d",
+  "size_bytes": 9127880,
+  "linkage": "dynamic",
+  "interpreter": "/lib64/ld-linux-x86-64.so.2",
+  "shared_libraries": [
+   "libgcc_s.so.1",
+   "libm.so.6",
+   "libc.so.6",
+   "/lib64/ld-linux-x86-64.so.2"
+  ],
+  "has_symbols": true
+ },
+ "floor_static": {
+  "path": "build/record-tmp/floor",
+  "source": "bench/tools/floor.s",
+  "sha256": "65abeff0cb04d05d93ae8db3c1d621bd6d8d79997239c0316e5e0120af6f4146",
+  "size_bytes": 4616,
+  "linkage": "static",
+  "interpreter": null,
+  "has_symbols": true
+ },
+ "source": {
+  "files": 79,
+  "s_files": 76,
+  "inc_files": 3,
+  "generated_files": [
+   "unicode_tables.s",
+   "ast_types.s"
+  ],
+  "hand_written_lines": 51987,
+  "hand_written_code_lines": 47626,
+  "generated_lines": 6754,
+  "generated_code_lines": 6727,
+  "code_lines_rule": "a code line is a line that is not blank and does not start with # or //",
+  "per_file": [
+   {
+    "file": "arena.s",
+    "lines": 248,
+    "code_lines": 213,
+    "generated": false
+   },
+   {
+    "file": "ast_types.s",
+    "lines": 2854,
+    "code_lines": 2834,
+    "generated": true
+   },
+   {
+    "file": "astdoc.s",
+    "lines": 252,
+    "code_lines": 212,
+    "generated": false
+   },
+   {
+    "file": "cli.s",
+    "lines": 611,
+    "code_lines": 569,
+    "generated": false
+   },
+   {
+    "file": "comments.s",
+    "lines": 1765,
+    "code_lines": 1606,
+    "generated": false
+   },
+   {
+    "file": "config.s",
+    "lines": 1856,
+    "code_lines": 1704,
+    "generated": false
+   },
+   {
+    "file": "config_parse.s",
+    "lines": 820,
+    "code_lines": 762,
+    "generated": false
+   },
+   {
+    "file": "core.s",
+    "lines": 63,
+    "code_lines": 57,
+    "generated": false
+   },
+   {
+    "file": "debugdoc.s",
+    "lines": 2842,
+    "code_lines": 2632,
+    "generated": false
+   },
+   {
+    "file": "defs.inc",
+    "lines": 839,
+    "code_lines": 751,
+    "generated": false
+   },
+   {
+    "file": "doc.s",
+    "lines": 537,
+    "code_lines": 476,
+    "generated": false
+   },
+   {
+    "file": "docprint.s",
+    "lines": 1163,
+    "code_lines": 1068,
+    "generated": false
+   },
+   {
+    "file": "docutils.s",
+    "lines": 1135,
+    "code_lines": 1028,
+    "generated": false
+   },
+   {
+    "file": "editorconfig.s",
+    "lines": 852,
+    "code_lines": 778,
+    "generated": false
+   },
+   {
+    "file": "glob.s",
+    "lines": 848,
+    "code_lines": 782,
+    "generated": false
+   },
+   {
+    "file": "ignore.s",
+    "lines": 795,
+    "code_lines": 742,
+    "generated": false
+   },
+   {
+    "file": "io.s",
+    "lines": 150,
+    "code_lines": 133,
+    "generated": false
+   },
+   {
+    "file": "json_parse.s",
+    "lines": 449,
+    "code_lines": 417,
+    "generated": false
+   },
+   {
+    "file": "lex.s",
+    "lines": 1033,
+    "code_lines": 964,
+    "generated": false
+   },
+   {
+    "file": "literal.s",
+    "lines": 500,
+    "code_lines": 457,
+    "generated": false
+   },
+   {
+    "file": "options.s",
+    "lines": 252,
+    "code_lines": 227,
+    "generated": false
+   },
+   {
+    "file": "parse_js.inc",
+    "lines": 150,
+    "code_lines": 109,
+    "generated": false
+   },
+   {
+    "file": "parse_js.s",
+    "lines": 1870,
+    "code_lines": 1718,
+    "generated": false
+   },
+   {
+    "file": "parse_js_class.s",
+    "lines": 1137,
+    "code_lines": 1071,
+    "generated": false
+   },
+   {
+    "file": "parse_js_dump.s",
+    "lines": 700,
+    "code_lines": 658,
+    "generated": false
+   },
+   {
+    "file": "parse_js_expr.s",
+    "lines": 2251,
+    "code_lines": 2136,
+    "generated": false
+   },
+   {
+    "file": "parse_js_lex.s",
+    "lines": 1249,
+    "code_lines": 1166,
+    "generated": false
+   },
+   {
+    "file": "parse_js_module.s",
+    "lines": 1028,
+    "code_lines": 974,
+    "generated": false
+   },
+   {
+    "file": "parse_js_pat.s",
+    "lines": 542,
+    "code_lines": 507,
+    "generated": false
+   },
+   {
+    "file": "parse_js_post.s",
+    "lines": 507,
+    "code_lines": 463,
+    "generated": false
+   },
+   {
+    "file": "parse_ts.s",
+    "lines": 2736,
+    "code_lines": 2507,
+    "generated": false
+   },
+   {
+    "file": "parse_ts_decl.s",
+    "lines": 709,
+    "code_lines": 655,
+    "generated": false
+   },
+   {
+    "file": "path.s",
+    "lines": 593,
+    "code_lines": 508,
+    "generated": false
+   },
+   {
+    "file": "pjs.inc",
+    "lines": 105,
+    "code_lines": 84,
+    "generated": false
+   },
+   {
+    "file": "pjs_array.s",
+    "lines": 310,
+    "code_lines": 286,
+    "generated": false
+   },
+   {
+    "file": "pjs_arrow_function.s",
+    "lines": 578,
+    "code_lines": 527,
+    "generated": false
+   },
+   {
+    "file": "pjs_assignment.s",
+    "lines": 714,
+    "code_lines": 655,
+    "generated": false
+   },
+   {
+    "file": "pjs_binaryish.s",
+    "lines": 419,
+    "code_lines": 392,
+    "generated": false
+   },
+   {
+    "file": "pjs_block.s",
+    "lines": 138,
+    "code_lines": 131,
+    "generated": false
+   },
+   {
+    "file": "pjs_call_arguments.s",
+    "lines": 780,
+    "code_lines": 718,
+    "generated": false
+   },
+   {
+    "file": "pjs_call_expression.s",
+    "lines": 200,
+    "code_lines": 186,
+    "generated": false
+   },
+   {
+    "file": "pjs_cast_expression.s",
+    "lines": 70,
+    "code_lines": 58,
+    "generated": false
+   },
+   {
+    "file": "pjs_class.s",
+    "lines": 570,
+    "code_lines": 530,
+    "generated": false
+   },
+   {
+    "file": "pjs_comment_print.s",
+    "lines": 461,
+    "code_lines": 385,
+    "generated": false
+   },
+   {
+    "file": "pjs_comments.s",
+    "lines": 1622,
+    "code_lines": 1447,
+    "generated": false
+   },
+   {
+    "file": "pjs_decorators.s",
+    "lines": 244,
+    "code_lines": 216,
+    "generated": false
+   },
+   {
+    "file": "pjs_embed.s",
+    "lines": 497,
+    "code_lines": 444,
+    "generated": false
+   },
+   {
+    "file": "pjs_enum.s",
+    "lines": 53,
+    "code_lines": 43,
+    "generated": false
+   },
+   {
+    "file": "pjs_estree.s",
+    "lines": 1235,
+    "code_lines": 1143,
+    "generated": false
+   },
+   {
+    "file": "pjs_expression_statement.s",
+    "lines": 15,
+    "code_lines": 11,
+    "generated": false
+   },
+   {
+    "file": "pjs_function.s",
+    "lines": 441,
+    "code_lines": 400,
+    "generated": false
+   },
+   {
+    "file": "pjs_function_parameters.s",
+    "lines": 467,
+    "code_lines": 418,
+    "generated": false
+   },
+   {
+    "file": "pjs_interface.s",
+    "lines": 106,
+    "code_lines": 96,
+    "generated": false
+   },
+   {
+    "file": "pjs_literal.s",
+    "lines": 155,
+    "code_lines": 144,
+    "generated": false
+   },
+   {
+    "file": "pjs_mapped_type.s",
+    "lines": 128,
+    "code_lines": 118,
+    "generated": false
+   },
+   {
+    "file": "pjs_member.s",
+    "lines": 151,
+    "code_lines": 138,
+    "generated": false
+   },
+   {
+    "file": "pjs_member_chain.s",
+    "lines": 816,
+    "code_lines": 765,
+    "generated": false
+   },
+   {
+    "file": "pjs_misc.s",
+    "lines": 169,
+    "code_lines": 144,
+    "generated": false
+   },
+   {
+    "file": "pjs_module.s",
+    "lines": 706,
+    "code_lines": 646,
+    "generated": false
+   },
+   {
+    "file": "pjs_needs_parens.s",
+    "lines": 1208,
+    "code_lines": 1103,
+    "generated": false
+   },
+   {
+    "file": "pjs_object.s",
+    "lines": 350,
+    "code_lines": 321,
+    "generated": false
+   },
+   {
+    "file": "pjs_printer.s",
+    "lines": 239,
+    "code_lines": 208,
+    "generated": false
+   },
+   {
+    "file": "pjs_property.s",
+    "lines": 276,
+    "code_lines": 248,
+    "generated": false
+   },
+   {
+    "file": "pjs_semicolon.s",
+    "lines": 98,
+    "code_lines": 91,
+    "generated": false
+   },
+   {
+    "file": "pjs_statement.s",
+    "lines": 48,
+    "code_lines": 42,
+    "generated": false
+   },
+   {
+    "file": "pjs_template_literal.s",
+    "lines": 652,
+    "code_lines": 606,
+    "generated": false
+   },
+   {
+    "file": "pjs_ternary.s",
+    "lines": 744,
+    "code_lines": 694,
+    "generated": false
+   },
+   {
+    "file": "pjs_ternary_old.s",
+    "lines": 388,
+    "code_lines": 357,
+    "generated": false
+   },
+   {
+    "file": "pjs_type_annotation.s",
+    "lines": 594,
+    "code_lines": 532,
+    "generated": false
+   },
+   {
+    "file": "pjs_type_parameters.s",
+    "lines": 298,
+    "code_lines": 268,
+    "generated": false
+   },
+   {
+    "file": "pjs_typescript.s",
+    "lines": 610,
+    "code_lines": 554,
+    "generated": false
+   },
+   {
+    "file": "pjs_utils.s",
+    "lines": 1531,
+    "code_lines": 1401,
+    "generated": false
+   },
+   {
+    "file": "print_estree.s",
+    "lines": 1194,
+    "code_lines": 1091,
+    "generated": false
+   },
+   {
+    "file": "print_json.s",
+    "lines": 649,
+    "code_lines": 603,
+    "generated": false
+   },
+   {
+    "file": "ptrmap.s",
+    "lines": 180,
+    "code_lines": 160,
+    "generated": false
+   },
+   {
+    "file": "sys.s",
+    "lines": 121,
+    "code_lines": 104,
+    "generated": false
+   },
+   {
+    "file": "text.s",
+    "lines": 962,
+    "code_lines": 875,
+    "generated": false
+   },
+   {
+    "file": "unicode_tables.s",
+    "lines": 3900,
+    "code_lines": 3893,
+    "generated": true
+   },
+   {
+    "file": "width.s",
+    "lines": 213,
+    "code_lines": 193,
+    "generated": false
+   }
+  ]
+ }
+}

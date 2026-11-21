@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="c" width="820" height="402" viewBox="0 0 820 402" role="img" aria-labelledby="headline-t headline-d">
+<title id="headline-t">Prettier 3.6.2, ported to hand-written x86-64 assembly</title>
+<desc id="headline-d">Format 59 real files, one process per file: Prettier (Node) 4.36 s, Rust port 0.215 s, asm 0.081 s. Peak memory, one file (Fuse/src/search/index.js): Prettier (Node) 65.7 MiB, Rust port 6.44 MiB, asm 0.37 MiB. 59/59 files byte-identical to Prettier 3.6.2.</desc>
+<style>
+.c{--surface:#ffffff;--ink:#0b0b0b;--ink2:#52514e;--muted:#6d6c67;--track:#f0efec;--base:#a3a29c;--feat:#2a78d6;--edge:#e1e0d9}
+@media (prefers-color-scheme:dark){.c{--surface:#141413;--ink:#f0efec;--ink2:#c3c2b7;--muted:#9a9993;--track:#242422;--base:#6d6c67;--feat:#3987e5;--edge:#2c2c2a}}
+.c text{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;fill:var(--ink);font-size:12px}
+.c .t2{fill:var(--ink2)}.c .mu{fill:var(--muted)}.c .h{font-size:15px;font-weight:600}
+.c .num{font-variant-numeric:tabular-nums}
+.c .bg{fill:var(--surface)}.c .grid{stroke:var(--grid);stroke-width:1}.c .axis{stroke:var(--axis);stroke-width:1}
+.c .title{font-size:19px;font-weight:600}.c .ph{font-size:14px;font-weight:600;fill:var(--ink2)}
+.c .lab{font-size:14px;fill:var(--ink2)}.c .lab.feat{fill:var(--ink);font-weight:600}
+.c .val{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-size:15px;fill:var(--ink2)}.c .val.feat{fill:var(--ink);font-weight:700}
+.c .foot{font-size:14px;fill:var(--ink2)}.c .track{fill:var(--track)}.c .base-bar{fill:var(--base)}.c .feat-bar{fill:var(--feat)}
+.c .bg{stroke:var(--edge);stroke-width:1}
+.c .grow{transform-box:fill-box;transform-origin:0 50%;animation:grow 1.1s cubic-bezier(.25,.8,.25,1) both}
+.c .val,.c .foot{animation:fade .35s ease-out both}
+.c .grow,.c .val,.c .foot{animation-delay:calc(var(--d) - var(--seek,0s));animation-play-state:var(--play,running)}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.c .grow,.c .val,.c .foot{animation:none}}
+</style>
+<rect class="bg" x="0.5" y="0.5" width="819" height="401" rx="14"/>
+<text class="title" x="410" y="44" text-anchor="middle">Prettier 3.6.2, ported to hand-written x86-64 assembly</text><text class="ph" x="32" y="88">Format 59 real files, one process per file</text><text class="mu" x="788" y="88" text-anchor="end">median of 10 runs</text><text class="lab" x="32" y="118">Prettier (Node)</text><rect class="track" x="182" y="104" width="528" height="18" rx="4"/><path class="grow base-bar" style="--d:0.25s" d="M182 104h524a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-524z"><title>Prettier (Node): 4.36 s</title></path><text class="val" x="788" y="118" text-anchor="end" style="--d:1.35s">4.36 s</text><text class="lab" x="32" y="150">Rust port</text><rect class="track" x="182" y="136" width="528" height="18" rx="4"/><path class="grow base-bar" style="--d:0.40s" d="M182 136h22.1a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-22.1z"><title>Rust port: 0.215 s</title></path><text class="val" x="788" y="150" text-anchor="end" style="--d:1.50s">0.215 s</text><text class="lab feat" x="32" y="182">asm</text><rect class="track" x="182" y="168" width="528" height="18" rx="4"/><path class="grow feat-bar" style="--d:0.55s" d="M182 168h5.8a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-5.8z"><title>asm: 0.081 s</title></path><text class="val feat" x="788" y="182" text-anchor="end" style="--d:1.65s">0.081 s</text><text class="ph" x="32" y="232">Peak memory, one file</text><text class="mu" x="788" y="232" text-anchor="end">Fuse/src/search/index.js</text><text class="lab" x="32" y="262">Prettier (Node)</text><rect class="track" x="182" y="248" width="528" height="18" rx="4"/><path class="grow base-bar" style="--d:0.85s" d="M182 248h524a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-524z"><title>Prettier (Node): 65.7 MiB</title></path><text class="val" x="788" y="262" text-anchor="end" style="--d:1.95s">65.7 MiB</text><text class="lab" x="32" y="294">Rust port</text><rect class="track" x="182" y="280" width="528" height="18" rx="4"/><path class="grow base-bar" style="--d:1.00s" d="M182 280h47.8a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-47.8z"><title>Rust port: 6.44 MiB</title></path><text class="val" x="788" y="294" text-anchor="end" style="--d:2.10s">6.44 MiB</text><text class="lab feat" x="32" y="326">asm</text><rect class="track" x="182" y="312" width="528" height="18" rx="4"/><path class="grow feat-bar" style="--d:1.15s" d="M182 312h2a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-2z"><title>asm: 0.37 MiB</title></path><text class="val feat" x="788" y="326" text-anchor="end" style="--d:2.25s">0.37 MiB</text><text class="foot" x="410" y="376" text-anchor="middle" style="--d:2.35s">59/59 files byte-identical to Prettier 3.6.2</text></svg>

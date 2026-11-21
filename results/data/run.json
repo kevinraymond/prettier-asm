@@ -1,0 +1,40 @@
+{
+ "schema": 1,
+ "run_id": "2026-11-21T02:58:42.645Z",
+ "started_utc": "2026-11-21T02:58:42.645Z",
+ "finished_utc": "2026-11-21T03:05:55.618Z",
+ "duration_s": 432.973,
+ "load_start": {
+  "load_1min": 0.4,
+  "load_5min": 1.48,
+  "load_15min": 3.39
+ },
+ "load_end": {
+  "load_1min": 1.36,
+  "load_5min": 1.99,
+  "load_15min": 3.06
+ },
+ "load_limit_1min": 1,
+ "forced": false,
+ "flags": {
+  "reps": 10,
+  "quick": false,
+  "skip_sweep": false,
+  "skip_mutants": false,
+  "force": false,
+  "allow_mismatch": false,
+  "asm_bin": "build/prettier-asm"
+ },
+ "command": "node bench/record.mjs",
+ "files": {
+  "environment.json": "bb75a572ee82f78db18515b109c757c2ed8201f66990f579fc31d05770932a4c",
+  "binary.json": "c7d979ea5e10c93a89b22eee998f761203efc1d789e5f6d59b205a6e6db07f0b",
+  "correctness.json": "f009814eb5efb889cbd9d538aa8885ac4b2506774843f3082bd08fa2778edf64",
+  "sweep.json": "4a2751bd770d531dc686acd0587d2a7770c4dae49b3e404fe68b45e899ba59f6",
+  "mutants.json": "5ee30e3c7bd9f1a73605f2926efbd85a3bb2e3cd97ec375410a3ff3faff66e34",
+  "performance.json": "f181314257738d4feff784f2baaf3e5d0475b9249b3930aac76aeeb7942bad2b",
+  "resources.json": "fd988d3f3ccad0203abe626ce831f72046a44c892ebc319f9fa0bee2f97fabad",
+  "hyperfine.json": "8ec0d17a740bfe467ec30d28ca4a1f929d95820f6b9d41d1c4cd90e05f6dc6c3",
+  "upstream.json": "5dd04c890b0572c01c9bfa0a47db1bc0d1947da845277c6915f0c1fba82ef0b4"
+ }
+}

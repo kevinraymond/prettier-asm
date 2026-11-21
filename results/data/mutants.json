@@ -1,0 +1,1249 @@
+{
+ "schema": 1,
+ "run_id": "2026-11-21T02:58:42.645Z",
+ "skipped": false,
+ "scripts": [
+  {
+   "script": "tests/stage1/mutants.mjs",
+   "present": true,
+   "exit": 0,
+   "signal": null,
+   "wall_ms": 4414.550902,
+   "total": 2,
+   "killed": 2,
+   "survived": 0,
+   "not_applied": 0,
+   "survived_equivalent": 0,
+   "summary_lines": [],
+   "summary_agrees": null,
+   "crashed": false,
+   "error": null,
+   "mutants": [
+    {
+     "name": "print-width-79",
+     "outcome": "killed"
+    },
+    {
+     "name": "null-literal",
+     "outcome": "killed"
+    }
+   ]
+  },
+  {
+   "script": "tests/stage3/config/mutants.mjs",
+   "present": true,
+   "exit": 0,
+   "signal": null,
+   "wall_ms": 20440.983562,
+   "total": 6,
+   "killed": 6,
+   "survived": 0,
+   "not_applied": 0,
+   "survived_equivalent": 0,
+   "summary_lines": [],
+   "summary_agrees": null,
+   "crashed": false,
+   "error": null,
+   "mutants": [
+    {
+     "name": "negation-ignored",
+     "outcome": "killed"
+    },
+    {
+     "name": "parents-not-tested",
+     "outcome": "killed"
+    },
+    {
+     "name": "editorconfig-root-ignored",
+     "outcome": "killed"
+    },
+    {
+     "name": "star-globstar-zero",
+     "outcome": "killed"
+    },
+    {
+     "name": "config-beats-cli",
+     "outcome": "killed"
+    },
+    {
+     "name": "package-json-without-key-counts",
+     "outcome": "killed"
+    }
+   ]
+  },
+  {
+   "script": "tests/stage3/infra/mutants.mjs",
+   "present": true,
+   "exit": 0,
+   "signal": null,
+   "wall_ms": 18253.063242,
+   "total": 12,
+   "killed": 12,
+   "survived": 0,
+   "not_applied": 0,
+   "survived_equivalent": 0,
+   "summary_lines": [
+    "mutants: 12 of 12 caught"
+   ],
+   "summary_agrees": true,
+   "crashed": false,
+   "error": null,
+   "mutants": [
+    {
+     "name": "fits: a line costs no width",
+     "outcome": "killed"
+    },
+    {
+     "name": "fits: mustBeFlat ignored",
+     "outcome": "killed"
+    },
+    {
+     "name": "fits: trim gives no width back",
+     "outcome": "killed"
+    },
+    {
+     "name": "fits: rest commands not read",
+     "outcome": "killed"
+    },
+    {
+     "name": "fill: pair check skipped",
+     "outcome": "killed"
+    },
+    {
+     "name": "generateInd: tabs for trailing aligns",
+     "outcome": "killed"
+    },
+    {
+     "name": "cleanDoc: nested group kept",
+     "outcome": "killed"
+    },
+    {
+     "name": "cleanDoc: strings not concatenated",
+     "outcome": "killed"
+    },
+    {
+     "name": "stripTrailingHardline: newlines kept",
+     "outcome": "killed"
+    },
+    {
+     "name": "propagateBreaks: break not marked propagated",
+     "outcome": "killed"
+    },
+    {
+     "name": "skipNewline: U+2028 not a line break",
+     "outcome": "killed"
+    },
+    {
+     "name": "path.match: arrays not skipped",
+     "outcome": "killed"
+    }
+   ]
+  },
+  {
+   "script": "tests/stage3/parser/mutants.mjs",
+   "present": true,
+   "exit": 0,
+   "signal": null,
+   "wall_ms": 11953.36574,
+   "total": 7,
+   "killed": 7,
+   "survived": 0,
+   "not_applied": 0,
+   "survived_equivalent": 0,
+   "summary_lines": [],
+   "summary_agrees": null,
+   "crashed": false,
+   "error": null,
+   "mutants": [
+    {
+     "name": "* binds like + (precedence swapped)",
+     "outcome": "killed"
+    },
+    {
+     "name": "parenthesized flag dropped",
+     "outcome": "killed"
+    },
+    {
+     "name": "statement end one byte short",
+     "outcome": "killed"
+    },
+    {
+     "name": "line comments lose their last byte",
+     "outcome": "killed"
+    },
+    {
+     "name": "TypeScript: parenthesized types kept (postprocess step dropped)",
+     "outcome": "killed"
+    },
+    {
+     "name": "TypeScript: generic calls never tried (f<T>(x) read as comparisons)",
+     "outcome": "killed"
+    },
+    {
+     "name": "cover grammar errors accepted ({a = 1} as an expression)",
+     "outcome": "killed"
+    }
+   ]
+  },
+  {
+   "script": "tests/stage3/comments/mutants.mjs",
+   "present": true,
+   "exit": 0,
+   "signal": null,
+   "wall_ms": 52167.42513,
+   "total": 153,
+   "killed": 102,
+   "survived": 51,
+   "not_applied": 0,
+   "survived_equivalent": 7,
+   "summary_lines": [
+    "deletion: 43 of 48 killed",
+    "swap: 1 of 45 killed",
+    "condition: 53 of 55 killed",
+    "print: 5 of 5 killed"
+   ],
+   "summary_agrees": true,
+   "crashed": false,
+   "error": null,
+   "mutants": [
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_ignore_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_conditional_expression_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_last_function_arg_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_member_expression_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_if_statement_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_while_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_try_statement_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_class_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_for_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_union_type_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_only_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_module_specifiers_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_assignment_pattern_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_method_name_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_labeled_statement_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_comments_in_destructuring_pattern",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_ts_mapped_type_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_closure_type_cast_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_last_function_arg_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_conditional_expression_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_module_specifiers_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_if_statement_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_while_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_try_statement_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_class_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_labeled_statement_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_call_expression_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_property_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_only_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_variable_declarator_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_switch_default_case_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_last_union_element_in_expression",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_last_binary_operator_operand",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_ts_mapped_type_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_ignore_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_if_statement_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_while_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_comment_in_empty_parens",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_only_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_comment_after_arrow_params",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_function_name_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_break_and_continue_statement_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_ts_function_trailing_comments",
+     "outcome": "killed",
+     "kind": "deletion"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_closure_type_cast_comments / pjc_handle_last_function_arg_comments",
+     "outcome": "killed",
+     "kind": "swap"
+    },
+    {
+     "name": "pjc_handle_if_statement_comments: \"    cmp eax, ')'\\n    jne 1f\" -> \"    cmp eax, '('\\n    jne 1f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_if_statement_comments: \"    jl 2f\" -> \"    jg 2f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_if_statement_comments: \"2:  TYPE r13, T_BlockStatement\\n    jne 3f\" -> \"2:  TYPE r13, T_BlockStatement\\n    jmp 3f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_if_statement_comments: \"    jnz 4f\\n    TRAIL r13\" -> \"    jz 4f\\n    TRAIL r13\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_if_statement_comments: \"6:  TYPE r14, T_IfStatement\" -> \"6:  TYPE r14, T_WhileStatement\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_if_statement_comments: \"61: cmp r14, [r12 + N_F1]\" -> \"61: cmp r14, [r12 + N_F2]\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_while_comments: \"2:  cmp r14, [r12 + N_F1]\" -> \"2:  cmp r14, [r12 + N_F0]\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_try_statement_comments: \"    test r13, r13\\n    jz 2f\" -> \"    test r13, r13\\n    jmp 2f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_try_statement_comments: \"4:  TYPE r14, T_CatchClause\" -> \"4:  TYPE r14, T_TryStatement\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_conditional_expression_comments: \"    jz 8f                               # on the preceding node's line\" -> \"    jz 1f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_conditional_expression_comments: \"    cmp r14, [r12 + N_F2]\" -> \"    cmp r14, [r12 + N_F1]\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_conditional_expression_comments: \"    test eax, eax\\n    jz 3f\\n2:\" -> \"    test eax, eax\\n    jmp 3f\\n2:\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_function_arg_comments: \"    cmp eax, T_RestElement\\n    je 1f\" -> \"    cmp eax, T_RestElement\\n    je 2f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_function_arg_comments: \"    cmp eax, T_AssignmentPattern\\n    je 1f\" -> \"    cmp eax, T_AssignmentPattern\\n    je 2f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_function_arg_comments: \"    cmp eax, T_ObjectPattern\\n    je 1f\" -> \"    cmp eax, T_ObjectPattern\\n    je 2f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_function_arg_comments: \"    cmp eax, T_ArrayPattern\\n    je 1f\" -> \"    cmp eax, T_ArrayPattern\\n    je 2f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_function_arg_comments: \"2:  cmp byte ptr [rbx + CM_TYPE], CT_BLOCK\\n    je 8f\" -> \"2:  cmp byte ptr [rbx + CM_TYPE], CT_BLOCK\\n    jne 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_function_arg_comments: \"    cmp eax, T_ObjectMethod\\n    jne 8f\" -> \"    cmp eax, T_ObjectMethod\\n    jmp 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_function_arg_comments: \"    cmp rax, rcx\\n    jne 8f\" -> \"    cmp rax, rcx\\n    je 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_is_real_function_like: \"    cmp eax, T_ClassMethod\\n    je 1f\" -> \"    cmp eax, T_ClassPrivateMethod\\n    je 1f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_is_real_function_like: \"    cmp eax, T_ArrowFunctionExpression\\n    je 1f\" -> \"    cmp eax, T_ArrowFunctionExpression\\n    jmp 1f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_class_comments: \"    cmp r13, [r12 + N_F0]\\n    je 31f\" -> \"    cmp r13, [r12 + N_F2]\\n    je 31f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_class_comments: \"    cmp r14, rax\\n    jne 3f\" -> \"    cmp r14, rax\\n    jmp 3f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_only_comments: \"3:  test r15, r15\\n    jz 4f\" -> \"3:  test r15, r15\\n    jnz 4f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_only_comments: \"    mov rdi, [r12 + N_F1]\\n    call pjc_vec_len\\n    test rax, rax\\n    jnz 8f\" -> \"    mov rdi, [r12 + N_F1]\\n    call pjc_vec_len\\n    test rax, rax\\n    nop\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_module_specifiers_comments: \"    call has_newline\\n    test eax, eax\\n    jz 8f\" -> \"    call has_newline\\n    test eax, eax\\n    nop\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_module_specifiers_comments: \"    cmp eax, T_ExportSpecifier\\n    jne 2f\" -> \"    cmp eax, T_ExportSpecifier\\n    jmp 2f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_module_specifiers_comments: \"3:  cmp ecx, T_ExportSpecifier\" -> \"3:  cmp ecx, T_ImportSpecifier\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_call_expression_comments: \"    cmp r13, [r12 + N_F0]\" -> \"    cmp r13, [r12 + N_F1]\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_call_expression_comments: \"    cmp qword ptr [rax], 0\\n    je 8f\" -> \"    cmp qword ptr [rax], 1\\n    je 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_variable_declarator_comments: \"    cmp eax, T_TaggedTemplateExpression\\n    je 2f\" -> \"    cmp eax, T_TaggedTemplateExpression\\n    je 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_variable_declarator_comments: \"    cmp eax, T_TemplateLiteral\\n    je 2f\" -> \"    cmp eax, T_TemplateLiteral\\n    je 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_variable_declarator_comments: \"    cmp byte ptr [rbx + CM_TYPE], CT_BLOCK\\n    jne 8f\" -> \"    cmp byte ptr [rbx + CM_TYPE], CT_LINE\\n    jne 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_variable_declarator_comments: \"    cmp eax, T_AssignmentExpression\\n    je 1f\" -> \"    cmp eax, T_AssignmentPattern\\n    je 1f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_switch_default_case_comments: \"    cmp qword ptr [r12 + N_F0], 0       # test\\n    jne 8f\" -> \"    cmp qword ptr [r12 + N_F0], 0       # test\\n    nop\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_switch_default_case_comments: \"    call pjs_is_line_comment\\n    test eax, eax\\n    jz 1f\" -> \"    call pjs_is_line_comment\\n    test eax, eax\\n    jnz 1f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_switch_default_case_comments: \"    cmp r14, [rax + 8]\\n    jne 8f\" -> \"    cmp r14, [rax + 8]\\n    nop\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_binary_operator_operand: \"    test r14, r14\\n    jnz 8f\" -> \"    test r14, r14\\n    jz 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_binary_operator_operand: \"    cmp eax, T_BinaryExpression\\n    jne 8f\" -> \"    cmp eax, T_BinaryExpression\\n    jmp 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_binary_operator_operand: \"    call has_newline_in_range\\n    test eax, eax\\n    jnz 8f\" -> \"    call has_newline_in_range\\n    test eax, eax\\n    nop\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_last_binary_operator_operand: \"    call pjc_is_single_line_comment\\n    test eax, eax\\n    jz 8f\" -> \"    call pjc_is_single_line_comment\\n    test eax, eax\\n    nop\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_comment_in_empty_parens: \"    call pjs_get_call_arguments\\n    cmp qword ptr [rax], 0\\n    je 3f\" -> \"    call pjs_get_call_arguments\\n    cmp qword ptr [rax], 0\\n    jne 3f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_comment_in_empty_parens: \"    call pjs_get_function_parameters\\n    cmp qword ptr [rax], 0\\n    je 3f\" -> \"    call pjs_get_function_parameters\\n    cmp qword ptr [rax], 0\\n    jne 3f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_comment_after_arrow_params: \"    cmp word ptr [rcx + rax], 0x3e3d    # \\\"=>\\\"\" -> \"    cmp word ptr [rcx + rax], 0x3d3e\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_function_name_comments: \"    cmp eax, T_ClassMethod\\n    je 1f\" -> \"    cmp eax, T_ClassMethod\\n    je 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_function_name_comments: \"    cmp eax, T_ObjectMethod\\n    jne 8f\" -> \"    cmp eax, T_ObjectMethod\\n    jmp 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_function_name_comments: \"    cmp eax, T_FunctionExpression\\n    je 1f\" -> \"    cmp eax, T_FunctionExpression\\n    je 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_break_and_continue_statement_comments: \"1:  cmp qword ptr [r12 + N_F0], 0       # label\\n    jne 8f\" -> \"1:  cmp qword ptr [r12 + N_F0], 0       # label\\n    nop\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_break_and_continue_statement_comments: \"    cmp eax, T_ContinueStatement\\n    je 1f\" -> \"    cmp eax, T_ContinueStatement\\n    je 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_handle_for_comments: \"    cmp eax, T_ForInStatement\\n    je 1f\" -> \"    cmp eax, T_ForInStatement\\n    je 8f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_add_block_statement_first_comment: \"    cmp word ptr [rax + N_TYPE], T_EmptyStatement\\n    je 1b\" -> \"    cmp word ptr [rax + N_TYPE], T_EmptyStatement\\n    nop\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_add_block_or_not_comment: \"    cmp word ptr [rdi + N_TYPE], T_BlockStatement\\n    jne 1f\" -> \"    cmp word ptr [rdi + N_TYPE], T_BlockStatement\\n    jmp 1f\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjc_is_single_line_comment: \"    call has_newline_in_range\\n    xor eax, 1\" -> \"    call has_newline_in_range\\n    mov eax, 1\"",
+     "outcome": "killed",
+     "kind": "condition"
+    },
+    {
+     "name": "pjs_comment_print.s: \"    call trim_end_bytes\\n    mov rdi, r12\\n    mov rsi, rax\" -> \"    mov eax, [rbx + CM_END]\\n    mov rdi, r12\\n    mov rsi, rax\"",
+     "outcome": "killed",
+     "kind": "print"
+    },
+    {
+     "name": "pjs_comment_print.s: \"    call pjs_is_line_comment\\n    test eax, eax\\n    jz 1f\" -> \"    cmp byte ptr [rbx + CM_TYPE], CT_LINE\\n    jne 1f\"",
+     "outcome": "killed",
+     "kind": "print"
+    },
+    {
+     "name": "pjs_comment_print.s: \"    call is_indentable_block_comment\\n    test eax, eax\\n    jz 2f\" -> \"    call is_indentable_block_comment\\n    jmp 2f\"",
+     "outcome": "killed",
+     "kind": "print"
+    },
+    {
+     "name": "pjs_comment_print.s: \"    lea rdx, [rip + d_literalline]\" -> \"    lea rdx, [rip + d_hardline]\"",
+     "outcome": "killed",
+     "kind": "print"
+    },
+    {
+     "name": "pjs_comment_print.s: \"    sub esi, 4\\n\" -> \"    sub esi, 3\\n\"",
+     "outcome": "killed",
+     "kind": "print"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_break_and_continue_statement_comments",
+     "outcome": "survived",
+     "kind": "deletion",
+     "equivalent": "a comment inside a break or continue without a label is on the keyword's line: a line break ends the statement (ASI)"
+    },
+    {
+     "name": "pjs_handlers_own_line: drop pjc_handle_nested_conditional_expression_comments",
+     "outcome": "survived",
+     "kind": "deletion",
+     "equivalent": "handleConditionalExpressionComments, earlier in the list, takes every own-line comment this one would"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: drop pjc_handle_break_and_continue_statement_comments",
+     "outcome": "survived",
+     "kind": "deletion",
+     "equivalent": "the same"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_object_property_assignment",
+     "outcome": "survived",
+     "kind": "deletion",
+     "equivalent": "Babel's shorthand value spans the key, so the comment's enclosing node is the AssignmentPattern, and the default puts it where the handler would"
+    },
+    {
+     "name": "pjs_handlers_remaining: drop pjc_handle_method_name_comments",
+     "outcome": "survived",
+     "kind": "deletion",
+     "equivalent": "for a remaining comment after a TSDeclareMethod's key the next character is `(`, so the tie-break makes it trailing on the key too; the decorator branch needs a line or own-line comment, which is never remaining inside a class"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_ignore_comments / pjc_handle_conditional_expression_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_conditional_expression_comments / pjc_handle_last_function_arg_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_last_function_arg_comments / pjc_handle_member_expression_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_member_expression_comments / pjc_handle_if_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_if_statement_comments / pjc_handle_while_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_while_comments / pjc_handle_try_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_try_statement_comments / pjc_handle_class_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_class_comments / pjc_handle_for_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_for_comments / pjc_handle_union_type_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_union_type_comments / pjc_handle_only_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_only_comments / pjc_handle_module_specifiers_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_module_specifiers_comments / pjc_handle_assignment_pattern_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_assignment_pattern_comments / pjc_handle_method_name_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_method_name_comments / pjc_handle_labeled_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_labeled_statement_comments / pjc_handle_break_and_continue_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_break_and_continue_statement_comments / pjc_handle_nested_conditional_expression_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_nested_conditional_expression_comments / pjc_handle_comments_in_destructuring_pattern",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_own_line: swap pjc_handle_comments_in_destructuring_pattern / pjc_handle_ts_mapped_type_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_last_function_arg_comments / pjc_handle_conditional_expression_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_conditional_expression_comments / pjc_handle_module_specifiers_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_module_specifiers_comments / pjc_handle_if_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_if_statement_comments / pjc_handle_while_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_while_comments / pjc_handle_try_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_try_statement_comments / pjc_handle_class_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_class_comments / pjc_handle_labeled_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_labeled_statement_comments / pjc_handle_call_expression_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_call_expression_comments / pjc_handle_property_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_property_comments / pjc_handle_only_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_only_comments / pjc_handle_variable_declarator_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_variable_declarator_comments / pjc_handle_break_and_continue_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_break_and_continue_statement_comments / pjc_handle_switch_default_case_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_switch_default_case_comments / pjc_handle_last_union_element_in_expression",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_last_union_element_in_expression / pjc_handle_last_binary_operator_operand",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_end_of_line: swap pjc_handle_last_binary_operator_operand / pjc_handle_ts_mapped_type_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_ignore_comments / pjc_handle_if_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_if_statement_comments / pjc_handle_while_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_while_comments / pjc_handle_object_property_assignment",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_object_property_assignment / pjc_handle_comment_in_empty_parens",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_comment_in_empty_parens / pjc_handle_method_name_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_method_name_comments / pjc_handle_only_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_only_comments / pjc_handle_comment_after_arrow_params",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_comment_after_arrow_params / pjc_handle_function_name_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_function_name_comments / pjc_handle_break_and_continue_statement_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjs_handlers_remaining: swap pjc_handle_break_and_continue_statement_comments / pjc_handle_ts_function_trailing_comments",
+     "outcome": "survived",
+     "kind": "swap"
+    },
+    {
+     "name": "pjc_handle_object_property_assignment: \"    ATTR r12, NA_SHORTHAND\\n    jz 8f\" -> \"    ATTR r12, NA_SHORTHAND\\n    jnz 8f\"",
+     "outcome": "survived",
+     "kind": "condition",
+     "equivalent": "the same"
+    },
+    {
+     "name": "pjs_is_line_comment: \"    cmp byte ptr [rdi + CM_TYPE], CT_INTERPRETER\\n    jne 9f\" -> \"    cmp byte ptr [rdi + CM_TYPE], CT_INTERPRETER\\n    jmp 9f\"",
+     "outcome": "survived",
+     "kind": "condition",
+     "equivalent": "a hashbang is never inside an if, switch case or unary expression, where the handlers ask"
+    }
+   ]
+  },
+  {
+   "script": "tests/stage3/printer/ts-mutants.mjs",
+   "present": true,
+   "exit": 0,
+   "signal": null,
+   "wall_ms": 154766.263283,
+   "total": 49,
+   "killed": 43,
+   "survived": 6,
+   "not_applied": 0,
+   "survived_equivalent": 6,
+   "summary_lines": [
+    "ts mutants: 43 of 49 killed"
+   ],
+   "summary_agrees": true,
+   "crashed": false,
+   "error": null,
+   "mutants": [
+    {
+     "name": "type assertion: always the plain group",
+     "outcome": "killed",
+     "killed_by": "6 DIFFERENT, first ts-fixtures/typescript-cast-array-and-object-ts"
+    },
+    {
+     "name": "type operator: unique printed as keyof",
+     "outcome": "killed",
+     "killed_by": "2 DIFFERENT, first ts-fixtures/typescript-unique-symbol-unique-symbol-ts"
+    },
+    {
+     "name": "property signature: readonly dropped",
+     "outcome": "killed",
+     "killed_by": "8 DIFFERENT, first ts-fixtures/typescript-array-comment-ts"
+    },
+    {
+     "name": "index signature: static dropped in a class",
+     "outcome": "killed",
+     "killed_by": "2 DIFFERENT, first ts-fixtures/typescript-index-signature-static-ts"
+    },
+    {
+     "name": "index signature: no trailing comma for several parameters",
+     "outcome": "survived",
+     "equivalent": "dead code: the parser reads one parameter, as Babel's tsTryParseIndexSignature does, and refuses a second"
+    },
+    {
+     "name": "method signature: get printed as set",
+     "outcome": "killed",
+     "killed_by": "2 DIFFERENT, first ts-fixtures/typescript-type-member-get-set-type-member-get-set-ts"
+    },
+    {
+     "name": "method signature: return type not grouped",
+     "outcome": "survived",
+     "equivalent": "each doc a return type prints to keeps its lines inside groups of its own, so the extra group changes no break"
+    },
+    {
+     "name": "module declaration: nested body printed as a declaration",
+     "outcome": "killed",
+     "killed_by": "refusals only: 12, first ts-fixtures/typescript-compiler-commentinnamespacedeclarationwithidentifierpathname-ts"
+    },
+    {
+     "name": "module declaration: body not grouped",
+     "outcome": "survived",
+     "equivalent": "a TSModuleBlock prints as `{}` or with hardlines only, so the group changes no break"
+    },
+    {
+     "name": "first token: constructor type gets `:`",
+     "outcome": "killed",
+     "killed_by": "26 DIFFERENT, first ts-fixtures/typescript-abstract-construct-types-abstract-construct-types-ts"
+    },
+    {
+     "name": "annotation property: no space before a commented annotation",
+     "outcome": "killed",
+     "killed_by": "3 DIFFERENT, first ts-cases \"let x /* c */: string;\\nfunction f(a /* c */: string) {}\\ni "
+    },
+    {
+     "name": "named tuple member: optional dropped",
+     "outcome": "killed",
+     "killed_by": "2 DIFFERENT, first ts-fixtures/typescript-tuple-tuple-labeled-ts"
+    },
+    {
+     "name": "type predicate: asserts dropped",
+     "outcome": "killed",
+     "killed_by": "6 DIFFERENT, first ts-fixtures/typescript-assert-comment-ts"
+    },
+    {
+     "name": "shouldHugType: null replaced by undefined",
+     "outcome": "killed",
+     "killed_by": "9 DIFFERENT, first ts-fixtures/typescript-assignment-issue-10846-ts"
+    },
+    {
+     "name": "intersection: second object type indented",
+     "outcome": "killed",
+     "killed_by": "12 DIFFERENT, first ts-fixtures/typescript-comments-issues-ts"
+    },
+    {
+     "name": "intersection: operator position inverted",
+     "outcome": "killed",
+     "killed_by": "18 DIFFERENT, first ts-fixtures/typescript-as-assignment2-ts"
+    },
+    {
+     "name": "union: indented in a type assertion",
+     "outcome": "killed",
+     "killed_by": "2 DIFFERENT, first ts-fixtures/typescript-cast-generic-cast-ts"
+    },
+    {
+     "name": "union: no start line",
+     "outcome": "killed",
+     "killed_by": "44 DIFFERENT, first ts-fixtures/typescript-as-as-ts"
+    },
+    {
+     "name": "union: no parentheses in a tuple",
+     "outcome": "killed",
+     "killed_by": "2 DIFFERENT, first ts-fixtures/typescript-union-consistent-with-flow-within-tuple-ts"
+    },
+    {
+     "name": "union member: align 4",
+     "outcome": "killed",
+     "killed_by": "19 DIFFERENT, first ts-fixtures/typescript-cast-generic-cast-ts"
+    },
+    {
+     "name": "type parameters: .ts check fails",
+     "outcome": "killed",
+     "killed_by": "8 DIFFERENT, first ts-fixtures/typescript-arrow-16067-ts"
+    },
+    {
+     "name": "type parameters: trailing comma on instantiations",
+     "outcome": "killed",
+     "killed_by": "46 DIFFERENT, first ts-fixtures/typescript-argument-expansion-arrow-with-return-type-ts"
+    },
+    {
+     "name": "type parameter: default without ` = `",
+     "outcome": "killed",
+     "killed_by": "8 DIFFERENT, first ts-fixtures/typescript-interface-long-type-parameters-long-type-parameters-ts"
+    },
+    {
+     "name": "inline dangling comments: no hardline after a line comment",
+     "outcome": "killed",
+     "killed_by": "4 DIFFERENT, first ts-fixtures/typescript-comments-type-parameters-ts"
+    },
+    {
+     "name": "mapped type: -readonly printed as +readonly",
+     "outcome": "killed",
+     "killed_by": "6 DIFFERENT, first ts-fixtures/typescript-custom-modifiers-minustoken-ts"
+    },
+    {
+     "name": "mapped type: no ifBreak(\";\")",
+     "outcome": "killed",
+     "killed_by": "27 DIFFERENT, first ts-fixtures/typescript-comments-mapped-types-ts"
+    },
+    {
+     "name": "mapped type: objectWrap preserve ignored",
+     "outcome": "killed",
+     "killed_by": "13 DIFFERENT, first ts-fixtures/typescript-comments-mapped-types-ts"
+    },
+    {
+     "name": "interface: shouldIndentOnlyHeritageClauses always false",
+     "outcome": "killed",
+     "killed_by": "4 DIFFERENT, first ts-fixtures/typescript-interface-generic-ts"
+    },
+    {
+     "name": "interface: several extends not indented",
+     "outcome": "killed",
+     "killed_by": "6 DIFFERENT, first ts-fixtures/typescript-interface-long-extends-ts"
+    },
+    {
+     "name": "cast: no group as a member object",
+     "outcome": "killed",
+     "killed_by": "7 DIFFERENT, first ts-fixtures/typescript-as-nested-await-and-as-ts"
+    },
+    {
+     "name": "decorators: class declaration not broken",
+     "outcome": "killed",
+     "killed_by": "6 DIFFERENT, first ts-fixtures/typescript-decorators-inline-decorators-ts"
+    },
+    {
+     "name": "class member decorators: line for hardline",
+     "outcome": "killed",
+     "killed_by": "33 DIFFERENT, first ts-fixtures/typescript-comments-16889-ts"
+    },
+    {
+     "name": "parser: readonly accepted on any type",
+     "outcome": "survived",
+     "equivalent": "the refusal is Babel's error; Prettier's typescript parser takes `readonly T` for any T and prints what the mutant prints"
+    },
+    {
+     "name": "parser: union with a leading `|` and one member unwrapped",
+     "outcome": "survived",
+     "equivalent": "the postprocess (parse_js_post.s, as Prettier's) replaces a one-member union by its member, so the tree is the same"
+    },
+    {
+     "name": "parser: `[` after a line break continues an array type",
+     "outcome": "killed",
+     "killed_by": "refusals only: 2, first real/real-fuse-test-fixtures-types-ts"
+    },
+    {
+     "name": "parser: mapped type `?` lost",
+     "outcome": "killed",
+     "killed_by": "2 DIFFERENT, first ts-fixtures/typescript-custom-modifiers-question-ts"
+    },
+    {
+     "name": "parser: named tuple member `?` lost",
+     "outcome": "killed",
+     "killed_by": "2 DIFFERENT, first ts-fixtures/typescript-tuple-tuple-labeled-ts"
+    },
+    {
+     "name": "parser: string enum member names not read",
+     "outcome": "killed",
+     "killed_by": "refusals only: 3, first ts-cases \"enum A { 'a' = 1, \\\"b-c\\\", 'd' }\" "
+    },
+    {
+     "name": "parser: declare global read as a namespace",
+     "outcome": "killed",
+     "killed_by": "4 DIFFERENT, first ts-fixtures/typescript-custom-module-global-ts"
+    },
+    {
+     "name": "parser: `asserts x` without asserts",
+     "outcome": "killed",
+     "killed_by": "2 DIFFERENT, first ts-fixtures/typescript-assert-index-ts"
+    },
+    {
+     "name": "parser: infer constraint kept before `?`",
+     "outcome": "killed",
+     "killed_by": "refusals only: 2, first ts-fixtures/typescript-infer-extends-basic-ts"
+    },
+    {
+     "name": "parser: `(a?:` not a function type start",
+     "outcome": "killed",
+     "killed_by": "refusals only: 4, first ts-fixtures/typescript-conformance-types-lasttypenode-lasttypenode-ts"
+    },
+    {
+     "name": "parser: private read as protected",
+     "outcome": "killed",
+     "killed_by": "55 DIFFERENT, first ts-fixtures/typescript-assignment-issue-2485-ts"
+    },
+    {
+     "name": "parser: optional property signature loses `?`",
+     "outcome": "killed",
+     "killed_by": "32 DIFFERENT, first ts-fixtures/typescript-comments-issues-ts"
+    },
+    {
+     "name": "parser: definite `!` lost",
+     "outcome": "killed",
+     "killed_by": "4 DIFFERENT, first ts-fixtures/typescript-definite-definite-ts"
+    },
+    {
+     "name": "parser: decorated parameters allowed in class expressions",
+     "outcome": "killed",
+     "killed_by": "3 DIFFERENT, first ts-cases \"const A = class { m(@dec a) {} };\" "
+    },
+    {
+     "name": "parser: decorated `this` allowed",
+     "outcome": "killed",
+     "killed_by": "3 DIFFERENT, first ts-cases \"class A { m(@dec this) {} }\" "
+    },
+    {
+     "name": "comments: superclass instantiation before implements not refused",
+     "outcome": "killed",
+     "killed_by": "3 DIFFERENT, first ts-cases \"class A extends B<T> // c\\nimplements C {}\" "
+    },
+    {
+     "name": "parser: declare not set on a variable in jts_try_declare",
+     "outcome": "survived",
+     "equivalent": "jts_expression_statement, the only caller, sets NA_DECLARE on what jts_try_declare returns"
+    }
+   ]
+  }
+ ]
+}

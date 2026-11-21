@@ -1,0 +1,52 @@
+{
+ "schema": 1,
+ "run_id": "2026-11-21T02:58:42.645Z",
+ "date_utc": "2026-11-21T02:58:42.645Z",
+ "cpu_model": "13th Gen Intel(R) Core(TM) i9-13900K",
+ "cpu_cores": 24,
+ "cpu_threads": 32,
+ "cpu_max_mhz": 5800,
+ "governor": "powersave",
+ "energy_performance_preference": "performance",
+ "memory_bytes": 202382213120,
+ "kernel": "Linux 6.12.113+deb13-amd64 x64",
+ "distro": "Debian GNU/Linux 13 (trixie)",
+ "node": "v22.21.0",
+ "as": "GNU assembler (GNU Binutils for Debian) 2.44",
+ "ld": "GNU ld (GNU Binutils for Debian) 2.44",
+ "prettier": "3.6.2",
+ "repo": {
+  "commit": null,
+  "dirty": null,
+  "src_tree_sha256": "df2aec493dba9eb852aeca8a5278cd43af50900cec21d36feb6c10860f951ada"
+ },
+ "rust_baseline": {
+  "prettier_clone_commit": "7a8b05f41574633fd3af5298f3eeaf33567ad3d3",
+  "prettier_clone_tag": "3.6.2",
+  "rust_anything_commit": "dabf50ca8af37008ab8305386465c07269724818",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "build_profile": "cargo build --release in ref/prettier/rust/app (see bench/rust-baseline.md)",
+  "app_crate_has_release_profile": false,
+  "lto": false
+ },
+ "corpus": {
+  "ms": {
+   "tag": "3.0.0-canary.1",
+   "commit": "1304f150b38027e0818cc122106b5c7322d68d0c"
+  },
+  "Fuse": {
+   "tag": "v7.1.0",
+   "commit": "8119c18862f7df585688b1320ff307eb19f8ff89"
+  },
+  "json-server": {
+   "tag": "v1.0.0-beta.3",
+   "commit": "6aa56d9581488d9bcd1baf42c4c97b293cd9ee99"
+  }
+ },
+ "tools": {
+  "strace": "strace -- version 6.13",
+  "perf": null,
+  "hyperfine": null
+ }
+}

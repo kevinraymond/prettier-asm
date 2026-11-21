@@ -1,0 +1,6 @@
+{
+ "schema": 1,
+ "run_id": "2026-11-21T02:58:42.645Z",
+ "available": false,
+ "reason": "hyperfine is not installed"
+}

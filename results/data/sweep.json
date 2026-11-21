@@ -1,0 +1,241 @@
+{
+ "schema": 1,
+ "run_id": "2026-11-21T02:58:42.645Z",
+ "skipped": false,
+ "exit": 0,
+ "wall_ms": 55911.90409,
+ "binary": "build/record-tmp/prettier-asm",
+ "lists": [
+  "js-fixtures",
+  "real",
+  "ts-fixtures"
+ ],
+ "cases": 1565,
+ "sets": [
+  {
+   "flags": [],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--print-width",
+    "40"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--print-width",
+    "120"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--print-width",
+    "20"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--no-semi"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--single-quote"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--trailing-comma",
+    "none"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--trailing-comma",
+    "es5"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--use-tabs"
+   ],
+   "cases": 1565,
+   "identical": 1204,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 110,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--tab-width",
+    "4"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--arrow-parens",
+    "avoid"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--no-bracket-spacing"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--bracket-same-line"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--quote-props",
+    "consistent"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--quote-props",
+    "preserve"
+   ],
+   "cases": 1565,
+   "identical": 1206,
+   "refused": 250,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--object-wrap",
+    "collapse"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--experimental-operator-position",
+    "start"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--experimental-ternaries"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  },
+  {
+   "flags": [
+    "--experimental-ternaries",
+    "--print-width",
+    "40"
+   ],
+   "cases": 1565,
+   "identical": 1205,
+   "refused": 251,
+   "different": 0,
+   "oracle_error": 109,
+   "different_cases": []
+  }
+ ],
+ "total": {
+  "identical": 22895,
+  "refused": 4768,
+  "different": 0
+ }
+}

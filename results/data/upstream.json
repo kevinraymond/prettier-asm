@@ -1,0 +1,116 @@
+{
+ "schema": 1,
+ "run_id": "2026-11-21T02:58:42.645Z",
+ "available": true,
+ "script": "ref/rust-anything/demo/real-world/prettier-rs/bench/cli.mjs",
+ "script_sha256": "6b5350342373e01b3456f77f45583ccf026f0bb1d3d91beb988c6ca25affc24f",
+ "command": "node <script> ref/prettier/dist/prettier/bin/prettier.cjs <front door> corpus/cases/real.jsonl <names>, from an empty directory",
+ "script_changed": false,
+ "method": "each run times Prettier against one front door, file by file; asm takes the front door's slot in its own runs; identical counts stdout equal to Prettier's; totals are rounded to whole ms by the script",
+ "published": {
+  "prettier_s": 3.63,
+  "front_door_s": 0.2,
+  "runs_prettier_s": [
+   3.63,
+   3.61
+  ],
+  "runs_front_door_s": [
+   0.2,
+   0.2
+  ],
+  "machine": "Apple M4 (10 cores, 16 GB), macOS 27.3, Node 24.15.0",
+  "source": "ref/rust-anything/docs/real-world.md, the Prettier benchmark table"
+ },
+ "runs": [
+  {
+   "run": 1,
+   "front_door": "rust",
+   "load_1min": 1.54,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4365,
+   "front_door_ms": 215
+  },
+  {
+   "run": 1,
+   "front_door": "asm",
+   "load_1min": 1.49,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4325,
+   "front_door_ms": 85
+  },
+  {
+   "run": 2,
+   "front_door": "rust",
+   "load_1min": 1.45,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4349,
+   "front_door_ms": 219
+  },
+  {
+   "run": 2,
+   "front_door": "asm",
+   "load_1min": 1.42,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4321,
+   "front_door_ms": 85
+  },
+  {
+   "run": 3,
+   "front_door": "rust",
+   "load_1min": 1.38,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4365,
+   "front_door_ms": 219
+  },
+  {
+   "run": 3,
+   "front_door": "asm",
+   "load_1min": 1.51,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4334,
+   "front_door_ms": 88
+  },
+  {
+   "run": 4,
+   "front_door": "rust",
+   "load_1min": 1.51,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4347,
+   "front_door_ms": 227
+  },
+  {
+   "run": 4,
+   "front_door": "asm",
+   "load_1min": 1.47,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4317,
+   "front_door_ms": 91
+  },
+  {
+   "run": 5,
+   "front_door": "rust",
+   "load_1min": 1.51,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4311,
+   "front_door_ms": 222
+  },
+  {
+   "run": 5,
+   "front_door": "asm",
+   "load_1min": 1.39,
+   "cases": 59,
+   "identical": 59,
+   "prettier_ms": 4334,
+   "front_door_ms": 84
+  }
+ ]
+}
